@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('buttefly.jpg'); /* Add your background image URL here */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Center the background image */
+        }
+
+        .resume {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(207, 9, 9, 0.1); /* Soft shadow effect */
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #ededed;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #ededed;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #666d04; /* Blue underline for section titles */
+            padding-bottom: 5px;
+            color: #666d04; /* Blue section title color */
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .date {
+            color: #666d04;
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            border-top: 2px solid #666d04; /* Blue top border for contact info */
+            padding-top: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: #666d04;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .back-home-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .back-home {
+            display: inline-block;
+            width: auto;
+            margin: 20px auto;
+            padding: 12px 25px;
+            text-align: center;
+            background-image: linear-gradient(45deg, #666d04, #666d04); /* Gradient background */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px; /* More rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 3D effect with shadow */
+            transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .back-home:hover {
+            background-image: linear-gradient(45deg, #666d04, #666d04);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+            transform: translateY(-2px); /* Slightly lifts the button on hover */
+        }
+
+        .back-home:active {
+            background-image: linear-gradient(45deg, #666d04, #666d04);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); /* Reduced shadow on click */
+            transform: translateY(0); /* Button returns to its original position on click */
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <h1>Rexie Jaboc</h1>
+        <p>1st Year College Student - BSIT</p>
+
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p>Jose Maria College</p>
+                <p class="date">2023-2028</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <p>Programming Languages: HTML, CSS, JavaScript</p>
+            <p>Computer Fundamentals and Problem-Solving</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:kyledinamp@gmail.com">rexie.jaboc@jmc.edu.ph</a></p>
+                <p>Phone: <a href="contact number: 09850691021">09850691021</a></p>
+                <p>Facebook: <a href="https://web.facebook.com/profile.php?id=100053454194692">https://web.facebook.com/profile.php?id=100053454194692</a></p>
+            </div>
+        </div>
+        
+        <div class="back-home-container">
+            <a class="back-home" href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>

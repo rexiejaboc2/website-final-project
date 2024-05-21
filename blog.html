@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('buttefly.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .post {
+            margin-bottom: 50px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+        .post:hover {
+            transform: scale(1.03);
+        }
+        .post:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient to bottom, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.😎 100%);
+            z-index: -1;
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+        }
+        .post:hover:before {
+            opacity: 1;
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            filter: brightness(80%) contrast(120%);
+            transition: filter 0.3s ease-in-out;
+        }
+        .post:hover img {
+            filter: brightness(100%) contrast(100%);
+        }
+        .post h2 {
+            font-size: 2.5em;
+            margin: 0;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .post p {
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .post a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .post a:hover {
+            color: #ff5500;
+        }
+        .back-home {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .back-home a {
+            color: #fff;
+            background-color: #ff5500;
+            padding: 15px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+        .back-home a:hover {
+            background-color: #a2b30b;
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Page!</h1>
+
+        <div class="post">
+            <h2>"HELLO WORLD"</h2>
+            <img src="rex.jpg" alt="Post 1">
+            <p>My Journey into Coding
+I recount my journey into the world of coding, from my first "Hello, World!" program to more complex projects. I'll share resources and tips for beginners looking to start their coding adventure.</p>
+            <p>Date: August, 2023</p>
+            <p></p>
+        </div>
+
+        <div class="post">
+            <h2>SAD YEAR</h2>
+            <img src="yes.jpg" alt="Post 2">
+            <p>This year was the worst year for me because of my friend experienced the worst night when she almost got raped and trusting her friend and lost a mother, it makes me sad how life is so unfair for her I know she's been through a lot of problems; she has suicidal thought yet she still keeps fighting for us. I always remind her I am here for her, no matter what happens. I know someday that she'll be successful in life and getting what she wants.</p>
+            <p>Year 2024</p>
+        </div>
+
+        <div class="back-home">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html

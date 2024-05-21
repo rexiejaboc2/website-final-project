@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9a6a1181d2.js" crossorigin="anonymous"></script>
+    <title>Rexie's Website</title>
+    <style>
+        body {
+            background-image: url('buttefly.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #857105;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .navbar ul li {
+            display: inline;
+        }
+
+        .navbar ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .navbar ul li a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+
+        .container {
+            text-align: left;
+            background: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: transparent;
+            margin: 200px;
+            margin-top:50px; /* Adjust margin to make space for the fixed navbar */
+            font-style: italic;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="testimonial.html">Testimonials</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="404errorpage.html">404 Error Page</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="facebook.jpg" alt="" class="profile-img">
+        <h1 style="text-align: left;">REXIE JABOC</h1>
+        <p>Hi there! I'm Rexie Jaboc, an enthusiastic IT student passionate about technology and innovation. Currently pursuing my degree in Information Technology, I am constantly exploring new advancements and honing my skills in programming, cybersecurity, and data analysis. Whether you're here to learn more about my academic journey, connect on social media, or explore my latest projects, you've come to the right place. Dive in and discover the exciting world of IT through my eyes!</p>
+        <div>
+            <a href="https://web.facebook.com/profile.php?id=100053454194692">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.messenger.com/t/7587161597976973">
+                <i class="fa-brands fa-facebook-messenger"></i>     
+            </a>
+        </div>
+        </div>
+</body>
+</html>

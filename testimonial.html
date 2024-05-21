@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; /* Adjusted padding */
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('buttefly.jpg'); /* Overlay and background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            height: 100vh; /* Set body height to viewport height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .testimonial-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px; /* Add padding to center the testimonials */
+        }
+        
+        .testimonial {
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+            border: 2px solid #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative; /* Position for overlay */
+            overflow: hidden; /* Hide overflow */
+        }
+        
+        .testimonial:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); /* Overlay gradient */
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .testimonial:hover:before {
+            opacity: 1; /* Show overlay on hover */
+        }
+        
+        .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3); /* Adjusted shadow on hover */
+        }
+        
+        .testimonial-content {
+            text-align: center;
+            position: relative;
+            z-index: 2; 
+        }
+        
+        .quote {
+            font-style: inherit ;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        
+        .author {
+            font-weight: bold;
+            color: #ccc;
+        }
+
+        /* Back to Home button styles */
+        .back-to-home {
+            padding: 10px 20px;
+            background-color: rgba(235, 214, 100, 0.5);
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .back-to-home:hover {
+            background-color: rgba(103, 127, 6, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class="testimonial-container">
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p class="quote">"Collaborating with G3 on various projects has been a rewarding experience. Their innovative approach and attention to detail are remarkable. They are a reliable team player and a quick learner."</p>
+                <p class="author">- Random Team</p>
+            </div>
+        </div>
+    
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p class="quote">"Rexie Jaboc is one of the most dedicated and hardworking students I've had the pleasure of teaching. Their passion for IT and continuous pursuit of knowledge make them stand out. They are always willing to help peers and contribute positively to group projects."</p>
+                <p class="author">- Jerwin</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Home button -->
+    <a href="index.html" class="back-to-home">Back to Home</a>
+</body>
+</html>               

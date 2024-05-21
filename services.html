@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YServices</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .services {
+            padding: 50px 0;
+            background-image: url('buttefly.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: #fff; /* Set text color to white for better readability */
+            position: relative;
+            overflow: hidden; /* Hide overflow to prevent background image from showing outside */
+        }
+        
+        .service,
+        .back-to-home {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: black; /* Set background color with opacity for better readability */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #000;
+        }
+        
+        .service:before,
+        .back-to-home:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+        
+        .service:hover:before,
+        .back-to-home:hover:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        
+        .service:hover,
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .service h2,
+        .back-to-home {
+            color: #ededed;
+            font-size: 24px;
+            margin-bottom: 10px;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .service:hover h2,
+        .back-to-home:hover {
+            color: #ff6f61; /* Change text color on hover */
+        }
+        
+        .service p,
+        .back-to-home {
+            color: #ededed;
+            font-size: 16px;
+            line-height: 1.6;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .service:hover p,
+        .back-to-home:hover {
+            color: #ededed /* Change text color on hover */
+        }
+        
+        .services h1 {
+            margin-bottom: 30px; /* Increase spacing between heading and services */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+        }
+
+        .back-to-home {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 10px;
+            background-color: black; /* Set background color with opacity for better readability */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .back-to-home:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .back-to-home:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid #ff6f61;
+            border-radius: 10px;
+            z-index: -1;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(0.9);
+            opacity: 0;
+        }
+
+        .back-to-home:hover:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <section class="services">
+        <div class="container">
+            <h1>My Services</h1>
+            <div class="service">
+                <h2>Web Design</h2>
+                <p>We offer custom web design solutions tailored to your business needs. Our designs are modern, responsive, and user-friendly, ensuring an engaging experience for your website visitors. Whether you need a simple portfolio website or a complex e-commerce platform, we've got you covered.</p>
+            </div>
+            <div class="service">
+                <h2>Graphic Design</h2>
+                <p>From logo creation to branding materials, our graphic design services help your business stand out. We create visually appealing designs that communicate your brand message effectively. Our team of designers pays attention to every detail, ensuring consistency and professionalism across all your marketing materials.</p>
+            </div>
+            <div class="service">
+                <h2>Digital Marketing</h2>
+                <p>Boost your online presence with our digital marketing strategies. From SEO to social media management, we help you reach your target audience and drive conversions. Our data-driven approach ensures that every marketing effort is optimized for maximum results, helping you achieve your business goals effectively.</p>
+            </div>
+            <div class="service">
+                <h2>Content Creation</h2>
+                <p>Engage your audience with compelling content created by our experienced team. Whether it's blog posts, articles, or social media content, we deliver content that resonates with your audience and drives engagement. Our content creation services are tailored to your brand voice and objectives, helping you build a strong online presence.</p>
+            </div>
+            <!-- Add more services as needed -->
+            <a href="index.html" class="back-to-home">Back to Home</a>
+        </div>
+    </section>
+</body>
+</html>
